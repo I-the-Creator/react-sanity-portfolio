@@ -27,6 +27,6 @@ export default createSchema({
     workExperience,
     experiences,
     contact,
-    /* Your types here! */
+    /* Your  schemas (types) here! */
   ]),
 })
