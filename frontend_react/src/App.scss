@@ -13,6 +13,8 @@
 
 .app__container {
     width: 100%;
+
+    /* TODO: update min-height to eliminate excessive top indent for Skills */
     min-height: 100vh;
 
     display: flex;
