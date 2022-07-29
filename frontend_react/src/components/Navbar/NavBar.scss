@@ -7,6 +7,7 @@
 
   padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -21,11 +22,11 @@
 
   img {
     width: 90px;
-    height: 20px;
+    height: 30px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
-      height: 40px;
+      height: 60px;
     }
   }
 }
@@ -35,11 +36,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   list-style: none;
 
   li {
     margin: 0 1rem;
     cursor: pointer;
+
     flex-direction: column;
 
     div {
@@ -55,6 +58,7 @@
       color: var(--gray-color);
       text-decoration: none;
       flex-direction: column;
+
       text-transform: uppercase;
       font-weight: 500;
 
@@ -81,11 +85,12 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
+  position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--secondary-color);
+  background-color: var(--secondary-color);
 
   cursor: pointer;
 
@@ -118,7 +123,8 @@
     background-size: cover;
     background-repeat: repeat;
 
-    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    /* top box shadow */
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
     // close icon
     svg {
@@ -146,9 +152,9 @@
         a {
           color: var(--gray-color);
           text-decoration: none;
+          font-size: 1rem;
           text-transform: uppercase;
           font-weight: 500;
-          font-size: 1rem;
 
           transition: all 0.3s ease-in-out;
 
